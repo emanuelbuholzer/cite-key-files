@@ -8,6 +8,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Verify cite keys
-        uses: emanuelbuholzer/cite-key-files@cite-key-files
+        uses: emanuelbuholzer/cite-key-files@main
         with:
           bibliography: test/bibliography.bib
