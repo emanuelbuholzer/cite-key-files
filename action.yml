@@ -1,0 +1,17 @@
+name: Github Action for cite-key-files
+description: GitHub Action to verify Bibtex cite keys matching file names
+author: Emanuel Buholzer
+branding:
+  icon: book-open
+  color: blue
+
+inputs:
+  bibliography:
+    description: >
+      The Bibtex bibliography file to be used
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+    - ${{ inputs.bibliography }}

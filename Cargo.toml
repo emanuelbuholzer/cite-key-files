@@ -1,0 +1,11 @@
+[package]
+name = "cite-key-files"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "cite-key-files"
+
+[dependencies]
+biblatex = "0.8"
+
